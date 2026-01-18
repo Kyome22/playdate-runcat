@@ -38,3 +38,7 @@ open -a "Playdate Simulator" .build/plugins/PDCPlugin/outputs/RunCat.pdx
 ```
 
 Or open the `.pdx` file directly from the Playdate Simulator app.
+
+## RunCat Font
+
+<img width="400" alt="RunCat Font" src="https://github.com/user-attachments/assets/d5591996-f081-4a1a-88ab-adaf889bcbd5" />
