@@ -76,7 +76,7 @@ struct Engine {
     private mutating func updateRoads() {
         if roads[0] == .sprout {
             score = min(999, score + 1)
-            if score.isMultiple(of: 15) {
+            if score.isMultiple(of: 10) {
                 speed = speed.next()
             }
         }
