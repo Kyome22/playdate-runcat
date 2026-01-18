@@ -2,6 +2,8 @@
 
 RunCat endless game for [Playdate](https://play.date). This project is written in Embedded Swift using [PlaydateKit](https://github.com/finnvoor/PlaydateKit).
 
+<img width="300" alt="Playdate Simulator" src="https://github.com/user-attachments/assets/e04ea2a9-33e6-4d66-a631-a4c1fa85780f" />
+
 ## Requirements
 
 - macOS 14 or later
