@@ -11,15 +11,6 @@ enum Cat {
         }
     }
 
-    var imagePath: String {
-        switch self {
-        case let .running(value):
-            value.imagePath
-        case let .jumping(value):
-            value.imagePath
-        }
-    }
-
     func next() -> Cat {
         switch self {
         case let .running(value):
@@ -31,7 +22,7 @@ enum Cat {
 }
 
 extension Cat {
-    enum Running: UInt8 {
+    enum Running: UInt8, CaseIterable {
         case frame0
         case frame1
         case frame2
@@ -59,7 +50,7 @@ extension Cat {
 }
 
 extension Cat {
-    enum Jumping: UInt8 {
+    enum Jumping: UInt8, CaseIterable {
         case frame0
         case frame1
         case frame2

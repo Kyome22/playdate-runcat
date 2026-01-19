@@ -1,4 +1,4 @@
-enum Road: UInt8 {
+enum Road: UInt8, CaseIterable {
     case flat
     case hill
     case crater
@@ -6,8 +6,8 @@ enum Road: UInt8 {
 
     var imagePath: String {
         switch self {
-        case .flat:   "road-flat"
-        case .hill:   "road-hill"
+        case .flat: "road-flat"
+        case .hill: "road-hill"
         case .crater: "road-crater"
         case .sprout: "road-sprout"
         }
