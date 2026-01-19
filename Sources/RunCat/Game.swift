@@ -6,10 +6,13 @@ final class Game: PlaydateGame {
     var lastButtons = PDButtons()
     var engine = Engine()
     let renderer = Renderer()
+    let soundPlayer = SoundPlayer()
 
     init() {
         engine.send(.gameLaunched)
         renderer.render(engine)
+        engine.onJump = { self.soundPlayer.play(.jump) }
+        engine.onHit = { self.soundPlayer.play(.hit) }
     }
 
     func update() -> Bool {

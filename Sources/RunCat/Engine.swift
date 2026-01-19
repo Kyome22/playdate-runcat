@@ -13,6 +13,8 @@ struct Engine {
     var cat = Cat.running(.frame0)
     var roads = [Road](repeating: .sprout, count: Int(Self.ROADS_COUNT))
     var isAutoPlay = false
+    var onJump: (() -> Void)?
+    var onHit: (() -> Void)?
 
     init() {}
 
@@ -22,7 +24,10 @@ struct Engine {
             initialize()
 
         case .tickReceived:
-            guard judge() else { return }
+            guard judge() else {
+                onHit?()
+                return
+            }
             updateRoads()
             updateCat()
             autoJump()
@@ -119,6 +124,9 @@ struct Engine {
 
         default:
             cat = cat.next()
+            if case .jumping(.frame5) = cat {
+                onJump?()
+            }
         }
     }
 
