@@ -40,7 +40,7 @@ extension Cat {
         }
 
         var imagePath: String {
-            "cat-running-\(rawValue)"
+            "Images/Cat/running-\(rawValue)"
         }
 
         func next() -> Running {
@@ -78,7 +78,7 @@ extension Cat {
         }
 
         var imagePath: String {
-            "cat-jumping-\(rawValue)"
+            "Images/Cat/jumping-\(rawValue)"
         }
 
         func next() -> Jumping {

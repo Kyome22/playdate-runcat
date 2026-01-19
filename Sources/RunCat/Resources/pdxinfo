@@ -1,5 +1,6 @@
-name=RunCat Endless Game
+name=RunCat Endless
 author=Kyome22
 description=RunCat endless game for Playdate.
-bundleID=com.kyome.playdate.runcat
-imagePath=
+bundleID=com.kyome.endless.runcat
+version=1.0.0
+imagePath=Images/

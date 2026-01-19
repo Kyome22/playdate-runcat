@@ -5,11 +5,12 @@ enum Road: UInt8, CaseIterable {
     case sprout
 
     var imagePath: String {
-        switch self {
-        case .flat: "road-flat"
-        case .hill: "road-hill"
-        case .crater: "road-crater"
-        case .sprout: "road-sprout"
+        let name = switch self {
+        case .flat: "flat"
+        case .hill: "hill"
+        case .crater: "crater"
+        case .sprout: "sprout"
         }
+        return "Images/Road/\(name)"
     }
 }
