@@ -4,7 +4,7 @@ RunCat endless game for [Playdate](https://play.date). This project is written i
 
 <img width="300" alt="Playdate Simulator" src="https://github.com/user-attachments/assets/e04ea2a9-33e6-4d66-a631-a4c1fa85780f" />
 
-## How to play
+## How to play on your Playdate
 
 Please sideload the [latest pdx file](https://github.com/Kyome22/playdate-runcat/releases) to your Playdate.
 For detailed instructions, please refer to the following site.
@@ -48,4 +48,4 @@ Or open the `.pdx` file directly from the Playdate Simulator app.
 
 ## RunCat Font
 
-<img width="400" alt="RunCat Font" src="https://github.com/user-attachments/assets/d5591996-f081-4a1a-88ab-adaf889bcbd5" />
+<img width="400" alt="RunCat Font" src="https://github.com/user-attachments/assets/56520065-3f83-475a-be9b-368c7d96cb4d" />
