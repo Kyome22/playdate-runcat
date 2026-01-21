@@ -4,6 +4,13 @@ RunCat endless game for [Playdate](https://play.date). This project is written i
 
 <img width="300" alt="Playdate Simulator" src="https://github.com/user-attachments/assets/e04ea2a9-33e6-4d66-a631-a4c1fa85780f" />
 
+## How to play
+
+Please sideload the [latest pdx file](https://github.com/Kyome22/playdate-runcat/releases) to your Playdate.
+For detailed instructions, please refer to the following site.
+
+https://help.play.date/games/sideloading/
+
 ## Requirements
 
 - macOS 14 or later
