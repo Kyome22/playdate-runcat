@@ -13,8 +13,7 @@ struct Engine {
     var cat = Cat.running(.frame0)
     var roads = [Road](repeating: .sprout, count: Int(Self.ROADS_COUNT))
     var isAutoPlay = false
-    var onJump: (() -> Void)?
-    var onHit: (() -> Void)?
+    var onSoundEffect: ((SoundEffect) -> Void)?
 
     init() {}
 
@@ -25,7 +24,7 @@ struct Engine {
 
         case .tickReceived:
             guard judge() else {
-                onHit?()
+                onSoundEffect?(.hit)
                 return
             }
             updateRoads()
@@ -125,7 +124,7 @@ struct Engine {
         default:
             cat = cat.next()
             if case .jumping(.frame5) = cat {
-                onJump?()
+                onSoundEffect?(.jump)
             }
         }
     }

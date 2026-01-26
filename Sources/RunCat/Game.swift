@@ -11,8 +11,7 @@ final class Game: PlaydateGame {
     init() {
         engine.send(.gameLaunched)
         renderer.render(engine)
-        engine.onJump = { self.soundPlayer.play(.jump) }
-        engine.onHit = { self.soundPlayer.play(.hit) }
+        engine.onSoundEffect = { self.soundPlayer.play($0) }
     }
 
     func update() -> Bool {
